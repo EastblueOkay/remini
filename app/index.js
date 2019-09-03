@@ -1,5 +1,7 @@
+import React from "remini"
+
 const r = () => {
-  console.log("babel webpack test");
-  return "Remini";
+  console.log(React)
+  return "Remini"
 };
-document.querySelector("#root").innerHTML = r();
+document.querySelector("#root").innerHTML = r()
