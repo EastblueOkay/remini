@@ -1,0 +1,22 @@
+{
+  "name": "remini",
+  "version": "1.0.0",
+  "description": "React like library with the same API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EastblueOkay/remini.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "eastblue_lan@126.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EastblueOkay/remini/issues"
+  },
+  "homepage": "https://github.com/EastblueOkay/remini#readme"
+}
