@@ -1,2 +1,2 @@
-# remini
-React like library with the same API.
+# Remini
+React like library with the same API
