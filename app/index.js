@@ -1,7 +1,8 @@
 import React from 'remini'
 
-const r = () => {
-  console.log(<div>hello</div>)
-  return 'helloasldfj'
-}
-document.querySelector('#root').innerHTML = r()
+React.render(
+  <h2 className="r" style={{ width: '100px', height: '100px', background: 'red' }}>
+    <span>Hello</span>
+  </h2>,
+  document.querySelector('#root')
+)
