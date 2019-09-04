@@ -4,3 +4,4 @@ node_modules
 publish
 .idea
 .vscode
+yarn-error.log

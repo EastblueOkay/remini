@@ -1,6 +1,5 @@
 const webpack = require("webpack")
 const { resolve } = require("path")
-const UglifyJSPlugin = require("uglifyjs-webpack-plugin")
 
 module.exports = {
   context: __dirname,
@@ -34,14 +33,6 @@ module.exports = {
     ]
   },
   mode: "development",
-  optimization: {
-    minimizer: [
-      new UglifyJSPlugin({
-        cache: true,
-        parallel: true
-      })
-    ]
-  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),

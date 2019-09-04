@@ -1,7 +1,7 @@
-import React from "remini"
+import React from 'remini'
 
 const r = () => {
   console.log(React)
-  return "Remini"
-};
-document.querySelector("#root").innerHTML = r()
+  return 'helloasldfj'
+}
+document.querySelector('#root').innerHTML = r()
