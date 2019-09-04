@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "94f4e39d6d9abc8ad6dd";
+/******/ 	var hotCurrentHash = "72bbaf08dca70ede1aeb";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -800,10 +800,35 @@
 /*!***********************!*\
   !*** ../app/index.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var r = function r() {\n  console.log('Hello');\n  return 'Hello';\n};\n\ndocument.querySelector('#root').innerHTML = r();\n\n//# sourceURL=webpack:///../app/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var remini__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! remini */ \"../src/index.js\");\n\n\nvar r = function r() {\n  console.log(remini__WEBPACK_IMPORTED_MODULE_0__[\"default\"].createElement(\"div\", null, \"hello\"));\n  return 'helloasldfj';\n};\n\ndocument.querySelector('#root').innerHTML = r();\n\n//# sourceURL=webpack:///../app/index.js?");
+
+/***/ }),
+
+/***/ "../src/core/createElement.js":
+/*!************************************!*\
+  !*** ../src/core/createElement.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return createElement; });\nfunction createElement() {}\n\n//# sourceURL=webpack:///../src/core/createElement.js?");
+
+/***/ }),
+
+/***/ "../src/index.js":
+/*!***********************!*\
+  !*** ../src/index.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _core_createElement__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./core/createElement */ \"../src/core/createElement.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  createElement: _core_createElement__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n});\n\n//# sourceURL=webpack:///../src/index.js?");
 
 /***/ })
 

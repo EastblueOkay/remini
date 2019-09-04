@@ -11,12 +11,29 @@
   "plugins": [
       "prettier"
   ],
+  "settings": {
+      "import/parser": "babel-eslint",
+      "import/resolver": {
+          "webpack": {
+              "config": "build/webpack.eslint.js"
+          }
+      }
+  },
   "parser": "babel-eslint",
   "rules": {
     "prettier/prettier": "error",
     "semi": [
       2,
       "never"
+    ],
+    "react/jsx-filename-extension": [
+        1,
+        {
+            "extensions": [
+                ".js",
+                ".jsx"
+            ]
+        }
     ]
   }
 }

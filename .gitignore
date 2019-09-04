@@ -5,3 +5,4 @@ publish
 .idea
 .vscode
 yarn-error.log
+app/bundle.js

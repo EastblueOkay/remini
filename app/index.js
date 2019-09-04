@@ -1,7 +1,7 @@
 import React from 'remini'
 
 const r = () => {
-  console.log(React)
+  console.log(<div>hello</div>)
   return 'helloasldfj'
 }
 document.querySelector('#root').innerHTML = r()

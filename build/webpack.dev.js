@@ -1,5 +1,6 @@
 const webpack = require("webpack")
 const { resolve } = require("path")
+const config = require("./config")
 
 module.exports = {
   context: __dirname,
@@ -9,12 +10,7 @@ module.exports = {
     filename: "bundle.js",
     publicPath: "/"
   },
-  resolve: {
-    extensions: [".ts", ".tsx", ".js"],
-    alias: {
-      remini: resolve(__dirname, "../src/index.js")
-    }
-  },
+  resolve: config.resolve,
   devServer: {
     hot: true,
     contentBase: resolve(__dirname, "../app")
