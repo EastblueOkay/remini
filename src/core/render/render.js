@@ -1,21 +1,4 @@
-import { styleTo } from '../utils/style'
-
-function mapProps(dom, props) {
-  for (const name of Object.keys(props)) {
-    if (name === 'children') continue
-    if (name === 'style') {
-      for (const [styleName, styleValue] of Object.entries(props.style)) {
-        dom.style[styleName] = styleTo(styleValue)
-      }
-      continue
-    }
-    if (name === 'className') {
-      dom.className = props.className
-      continue
-    }
-    dom.setAttribute(name, props[name])
-  }
-}
+import mapProps from './mapProps'
 
 function mountChildren(children, parent) {
   const arrChildren = Array.isArray(children) ? children : [children]
@@ -33,9 +16,12 @@ function renderComponent(vnode, container) {
   const { type: Component, props } = vnode
   const instance = new Component(props)
   const renderedVnode = instance.render()
+  instance._VNode = renderedVnode
   if (!renderedVnode) return null
   // eslint-disable-next-line no-use-before-define
-  return render(renderedVnode, container)
+  const dom = render(renderedVnode, container)
+  renderedVnode._hostDOM = dom
+  return dom
 }
 
 export default function render(vnode, container) {
