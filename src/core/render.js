@@ -1,9 +1,11 @@
+import { styleTo } from './utils/style'
+
 function mapProps(dom, props) {
   for (const name of Object.keys(props)) {
     if (name === 'children') continue
     if (name === 'style') {
       for (const [styleName, styleValue] of Object.entries(props.style)) {
-        dom.style[styleName] = styleValue
+        dom.style[styleName] = styleTo(styleValue)
       }
       continue
     }
